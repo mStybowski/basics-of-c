@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(void){
 
@@ -32,6 +33,14 @@ int main(void){
     char someLetter = 'C';
 
     printf("You print single letter like that: %c%c", someLetter, mySingleCharacter);
+
+    char buf[128];
+
+    strcpy(buf, "Hi\n");
+
+    int numberOfCharactersInString = strlen(buf);
+
+    printf("Dlugosc stringa to: %i", numberOfCharactersInString); // 3
 
     return 0;
 }
