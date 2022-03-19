@@ -40,7 +40,19 @@ int main(void){
 
     int numberOfCharactersInString = strlen(buf);
 
-    printf("Dlugosc stringa to: %i", numberOfCharactersInString); // 3
+    printf("Dlugosc stringa to: %i\n", numberOfCharactersInString); // 3
+
+    // Using <stdbool.h> to ease handling booleans
+
+    _Bool booleanVar = 0;
+
+    printf("BoolVar = %i\n", booleanVar);
+
+    long long int maxAmountOfMemory = 7856785;
+
+    printf("Large number = %lli\n", maxAmountOfMemory);
+
+    unsigned int positiveNumber;
 
     return 0;
 }
